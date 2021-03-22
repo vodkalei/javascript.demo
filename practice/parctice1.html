@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class='btn'>button1</button>
+    <button class='btn'>button2</button>
+    <button class='btn'>button3</button>
+
+    <p id='pgh1'>金庸</p>
+    <p id='pgh2'>金光</p>
+
+    <script>
+        var buttons = document.getElementsByClassName('btn');
+        alert(buttons.length);
+
+        document.getElementById('pgh1').innerText = '飛雪';
+        documeny.getElementById('pgh2').innerHtml = '<span style= "color:#7878ff">別人的</span>';
+    </script>
+</body>
+
+</html>

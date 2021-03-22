@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let listOfName = ['Alex', 'Bill', 'Cook', 'Darren'];
+        console.log(listOfName[0]);
+        console.log(listOfName[3]);
+        console.log(listOfName[4]);
+
+        let listOfNamenew = ['Alex', 'Bill', 'Cook', 'Darren'];
+        listOfNamenew[4] = 'Ellen';
+        console.log(listOfNamenew);
+
+        let listOfNamepush = ['Alex', 'Bill', 'Cook', 'Darren'];
+        listOfNamepush.push('Ellen');
+        listOfNamepush.push('Fox');
+        console.log(listOfNamepush);
+
+        let arr = ['a', 'b', 'c', 'd']
+        let str = '';
+        for (let i = 0; i < arr.length; i++) {
+            if (str == '') { str = arr[i]; }
+            else { str += ',' + arr[i]; }
+        }
+        console.log(str);
+
+        let lon = ['alex', 'bill', 'cook', 'david'];
+        lon[0] = 'allen';
+        lon[2] = 'carl';
+        console.log(lon);
+
+        let lonn = ['alex', 'bill', 'cook', 'david'];
+        lonn.pop();
+        lonn.pop();
+        console.log(lonn);
+
+        let lonre = ['alex', 'bill', 'cook', 'david'];
+        lonre.pop();
+        lonre.pop();
+        lonre = ['alex', 'bill', 'cook', 'david'];
+        let name = lonre.pop();
+        console.log(name);
+
+        let arraym = [
+            ['a0', 'a1', 'a2'],
+            ['b0', 'b1'],
+            ['c0', 'c1', 'c2', 'c3'],
+        ]
+        console.log(arraym[0][1]);
+        console.log(arraym[2][4]);
+
+
+        let arr1d = [];
+        for (let k = 0; k < 10; k++) {
+            arr1d.push(k);
+        }
+
+        let arr2d = [];
+        for (let j = 0; j < 10; j++) {
+            arr2d.push(arr1d);
+        }
+        console.log(arr2d);
+    </script>
+</body>
+
+</html>
