@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arrMeal = ['McDon', 'Kfc', 'MosBur', 'Dkk', 'BurKing'];
+        let userandom = Math.floor(Math.random() * arrMeal.length);
+        document.write(`I can choose:<br>`);
+
+        for (let i = 0; i < arrMeal.length; i++) {
+            document.write('=>' + arrMeal[i] + '<br>');
+        }
+
+        document.write(`I'm going to have ${arrMeal[userandom]}`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

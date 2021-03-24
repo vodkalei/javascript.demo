@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var person = function (firstname) {
+            this.firstname = firstname;
+        };
+
+        person.prototype.sayhello = function () {
+            console.log("hello, I'm " + firstname);
+        };
+
+        var person1 = new person('Alex');
+        var person2 = new person('Bill');
+
+        console.log(person1.firstname);
+        console.log(person2.firstname);
+
+        person1.sayhello();
+        person2.sayhello();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a href="https://tw.yahoo.com/" onclick="javascript: alert(document.links[0].href);">奇摩連結</a>
+
+    <input type="text" name="txt" id="txt" onfocus="showFocus()" />
+
+    <div id="box" style="width: 300px; height: 100px; background-color: #708905;" onmousemove="move()"
+        onmouseout="out()">請用滑鼠移過此元素</div>
+
+    <script>
+        //在文字欄位中，寫入文字
+        function showFocus() {
+            document.getElementById('txt').value = '你好!!';
+        }
+
+        //onmousemove 事件所使用的函式
+        function move() {
+            document.getElementById("box").style.backgroundColor = '#781346';
+        }
+
+        //onmouseout 事件所使用的函式
+        function out() {
+            document.getElementById("box").style.backgroundColor = '#321667';
+        }
+    </script>
+</body>
+
+</html>
