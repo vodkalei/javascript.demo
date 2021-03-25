@@ -19,17 +19,17 @@
         // 取得容器
         var myList = document.getElementById('myList');
 
-        // 取得 "<li>Item 02</li>" 的元素
+
         var oldNode = document.querySelectorAll('li')[1];
 
-        // 建立 li 元素節點
+
         var newNode = document.createElement('li');
 
-        // 建立 textNode 文字節點
+
         var textNode = document.createTextNode("Hello world!");
         newNode.appendChild(textNode);
 
-        // 將原有的 oldNode 替換成新節點 newNode
+
         myList.insertBefore(newNode, oldNode);
     </script>
 </body>
